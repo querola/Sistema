@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Usuarios - Copia\**" />
+    <Compile Remove="Ventas - Copia\**" />
+    <EmbeddedResource Remove="Usuarios - Copia\**" />
+    <EmbeddedResource Remove="Ventas - Copia\**" />
+    <None Remove="Usuarios - Copia\**" />
+    <None Remove="Ventas - Copia\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Ventas\" />
+    <Folder Include="Usuarios\" />
+  </ItemGroup>
+
+</Project>
